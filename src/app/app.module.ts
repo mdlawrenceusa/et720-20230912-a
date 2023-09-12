@@ -9,13 +9,15 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { FooterComponent } from './footer/footer.component';
 import { VideosComponent } from './videos/videos.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
+      { path: 'home', component: ProductListComponent },
       { path: 'videos', component: VideosComponent },
 
     ])
@@ -26,7 +28,8 @@ import { VideosComponent } from './videos/videos.component';
     ProductListComponent,
     JumbotronComponent,
     FooterComponent,
-    VideosComponent
+    VideosComponent,
+    ContactComponent
   ],
   bootstrap: [
     AppComponent
