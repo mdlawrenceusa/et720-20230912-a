@@ -1,8 +1,21 @@
-<a [routerLink]="['/']">
-  <h1>My Store</h1>
-</a>
-
-<a class="button fancy-button"><em class="material-icons">shopping_cart</em>Checkout</a>
+<header class="container">
+  <div class="row">
+    <a class="col-sm-8" [routerLink]="['/']">
+      <h1 >Skillfair</h1>
+    </a>
+    <nav class="col-sm-4">
+      <a [routerLink]="['/']">
+        <p>newest</p>
+      </a>
+      <a [routerLink]="['/']">
+        <p>catalogue</p>
+      </a>
+      <a [routerLink]="['/']">
+        <p>contact</p>
+      </a>
+    </nav>
+  </div>
+</header>
 
 
 <!-- 
