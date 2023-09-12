@@ -19,6 +19,8 @@ import { ContactComponent } from './contact/contact.component';
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: ProductListComponent },
       { path: 'videos', component: VideosComponent },
+      { path: 'contact', component: ContactComponent },
+
 
     ])
   ],
